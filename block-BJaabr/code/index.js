@@ -95,17 +95,17 @@ Do the following with above problem.
 */
 
 // - Write a Function Declaration
-function sum(numA,numB) {
+function sum(numA=0,numB=0) {
   return numA+numB;
 }
 // - Write a Function Expression
-let sum = function(numA,numB){
+let sum = function(numA=0,numB=0){
   return numA+numB;
 }
 // - Write an Arrow Function without curly brackets(if possible)
-let sum = (numA,numB) => numA+numB;
+let sum = (numA=0,numB=0) => numA+numB;
 // - Write an Arrow Function with curly brackets
-let sum = (numA,numB) => {
+let sum = (numA=0,numB=0) => {
   return numA+numB;
 };
 // - Execute the function
@@ -149,7 +149,7 @@ Do the following with above problem.
 */
 
 // - Write a Function Declaration
-function isGreater(number1,number2) {
+function isGreater(number1=0,number2=0) {
   if (number1>number2){
     return true;
   } else {
@@ -157,7 +157,7 @@ function isGreater(number1,number2) {
   }
 }
 // - Write a Function Expression
-let isGreater = function (number1,number2) {
+let isGreater = function (number1=0,number2=0) {
   if (number1>number2){
     return true;
   } else {
@@ -165,9 +165,9 @@ let isGreater = function (number1,number2) {
   }
 }
 // - Write an Arrow Function without curly brackets(if possible)
-let isGreater = (number1,number2) => (number1>number2) ? true : false;
+let isGreater = (number1=0,number2=0) => (number1>number2) ? true : false;
 // - Write an Arrow Function with curly brackets
-let isGreater = (number1,number2) => {
+let isGreater = (number1=0,number2=0) => {
   if (number1>number2){
     return true;
   } else {
